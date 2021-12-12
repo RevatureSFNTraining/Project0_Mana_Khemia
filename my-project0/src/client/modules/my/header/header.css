@@ -1,0 +1,33 @@
+.center {
+    text-align: center;
+}
+
+.header {
+    height: 13em;
+    background-color: lightgray;
+}
+
+.siteName {
+    color:black;
+    font-family: "Cooper Black";
+    font-size: 6.8em;
+    margin-top: auto;
+    margin-bottom: 0.1em;
+    height: 0.9em;
+}
+
+.mission {
+    color:blue;
+    font-family: "Cooper Black";
+    font-size: 1.7em;
+    margin-top: auto;
+    margin-bottom: 0.1em;
+}
+
+.phone {
+    color: red;
+    font-family: "Arial";
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: auto;
+}

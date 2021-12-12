@@ -1,0 +1,37 @@
+.center {
+    text-align: center;
+}
+
+.footer {
+    height: auto;
+    background-color: lightgray;
+}
+
+.policy {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: small;
+}
+
+a:link {
+    color: gray;
+    text-decoration: none;
+}
+
+a:visited {
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+td {
+    border-left: solid;
+    border-color: gray;
+}
+
+td.first {
+    border-left: none;
+}
