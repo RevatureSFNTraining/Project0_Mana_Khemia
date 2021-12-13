@@ -3,16 +3,23 @@
     <!-- Header -->
     <my-header></my-header>
 
-    <!-- Left Side Menu -->
-    <!-- <my-left-side-menu></my-left-side-menu> -->
-
-    <!-- Right Side Menu -->
-    <!-- <my-right-side-menu></my-right-side-menu> -->
-
-    <!-- Body -->
-    <my-body></my-body>
+    <div class="slds-grid">
+        <div class="sidebar center slds-col" style="width: 20%">
+            <!-- Left Sidebar -->
+            <my-left-sidebar></my-left-sidebar>
+        </div>
+        <div class="center slds-col" style="width: 60%">
+            <!-- Body -->
+            <my-body></my-body>
+        </div>
+        <div class="sidebar center slds-col" style="width: 20%">
+            <span>3</span>
+            <!-- Right Sidebar -->
+            <!-- <my-right-sidebar></my-right-sidebar> -->
+        </div>
+    </div>
 
     <!-- Footer -->
     <my-footer></my-footer>
-
+      
 </template>

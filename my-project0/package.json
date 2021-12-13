@@ -4,6 +4,8 @@
     "author": "Conner Eilenfeldt",
     "bugs": "https://github.com/Conner Eilenfeldt/my-project0/issues",
     "dependencies": {
+        "@lwc/synthetic-shadow": "^2.6.1",
+        "@salesforce-ux/design-system": "^2.16.2",
         "compression": "^1.7.4",
         "express": "^4.17.1",
         "helmet": "^4.6.0"
