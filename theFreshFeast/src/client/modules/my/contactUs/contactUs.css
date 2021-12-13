@@ -1,0 +1,52 @@
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.flex-container > div {
+    margin: 70px;
+    padding: 20px;
+    font-size: 20px;
+    padding: 10px;
+}
+.KL{
+    line-height: 18px;
+    font-size: 16px;
+    color: #6a6141;
+    font-weight: normal;
+    font-style: italic;
+}
+.address, .phone{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 15px;
+}
+.a{
+    background-color:#b0091b;
+    margin: 10px;
+    height: 15px;
+}
+hr{
+    background-color:#b0091b;
+}
+.getbtn{
+    font-size: 15px;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #b0091b;
+    color: white;
+    text-align: center;
+    height: 100px;
+ }
+ .footerp{
+     margin: auto;
+     padding: 40px;
+ }

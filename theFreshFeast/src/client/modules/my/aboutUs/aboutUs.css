@@ -1,0 +1,42 @@
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.flex-container > div {
+    margin: 70px;
+    padding: 20px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+
+ .about{
+     font-size: 20px;
+     color:#b0091b;
+ }
+ .aboutus{
+     font-size:13px;
+ }
+ .box{
+    width:40%;
+ }
+ .content{
+     width:60%;
+ }
+
+
+ .footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #b0091b;
+    color: white;
+    text-align: center;
+    height: 100px;
+ }
+ .footerp{
+     margin: auto;
+     padding: 40px;
+ }

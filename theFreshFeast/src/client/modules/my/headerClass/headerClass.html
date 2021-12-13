@@ -1,0 +1,60 @@
+<template>
+  <!-- Header-->
+          <div class="header-wrapper">
+
+            <div class= "header">
+
+              <div class="grid-item">
+                <img src="./resources/logoname.png" width="150px" height="auto" class="headerImg"/>
+              </div>
+
+            </div>
+
+              <div class="grid-item tag">
+                <p class="freshFoodTag">Fresh prepared food... everyday! With two convenient locations</p>
+                <div class="location">
+                  <table>
+                    <tr>
+                      <td><div class="loctab"><span class=" grid-item loc">MD - (xxx)xxx xxxx</span></div></td>
+                      <td><div class="loctab"><span class="grid-item loc">MD - (xxx)xxx xxxx</span></div> </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+          </div>
+       
+          
+        <!--Buttons-->
+        <section>
+          <div class="slds-button-group divbtn" role="group">
+            <div>
+              <button onclick={handleHomeClick} class="slds-button slds-button_neutral btn">Home</button>
+            </div>
+            <div>
+              <button class="slds-button slds-button_neutral btn">Classic Menu</button>
+            </div>
+            <div>
+              <button class="slds-button slds-button_neutral btn">Daily Special</button>
+            </div>
+            <div>
+              <button onclick={handleAboutClick} class="slds-button slds-button_neutral btn">About Us</button>
+            </div>
+            <div>
+              <button onclick={handleContactClick} class="slds-button slds-button_neutral btn">Contact Us</button> 
+            </div>
+          </div>
+        </section>
+
+       
+       
+
+     <div if:true = {showContactUs}>
+       <my-contact-us></my-contact-us>
+     </div>
+      <div  if:true = {showAboutUs}>
+       <my-about-us></my-about-us>
+    </div>
+    <div  if:true = {showHomePage}>
+      <my-home-page></my-home-page>
+   </div>
+</template>
