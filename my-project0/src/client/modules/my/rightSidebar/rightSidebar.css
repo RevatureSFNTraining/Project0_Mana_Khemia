@@ -1,0 +1,12 @@
+.center {
+    text-align: center;
+}
+
+.rightSidebar {
+    background-color: pink;
+    width: auto;
+}
+
+.container {
+    margin-top: 25px;
+}
