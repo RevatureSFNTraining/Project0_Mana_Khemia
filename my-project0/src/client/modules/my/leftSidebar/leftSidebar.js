@@ -2,6 +2,7 @@ import { LightningElement } from 'lwc';
 
 export default class LeftSidebar extends LightningElement {
     queryTerm;
+    tabSelected;
     search = false;
 
     handleKeyUp(event) {
@@ -11,12 +12,15 @@ export default class LeftSidebar extends LightningElement {
         }
     }
 
-    handleInputChange (event) {
+    handleInputChange(event) {
         this.queryTerm = event.target.value;
     }
 
-
     handleSearch(event) {
         this.search = true;
+    }
+
+    handleTabClick(event) {
+        this.dispatchEvent(new CustomEvent("tabchange", { detail: event.target.name }));
     }
 }

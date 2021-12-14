@@ -1,6 +1,6 @@
 <template>
 
-    <div class="leftSidebar center ">
+    <div class="leftSidebar center">
 
         <!-- Search Bar -->
         <div class="container">
@@ -36,16 +36,16 @@
         <div class="container">
             <ul class="slds-has-dividers_around slds-has-block-links_space">
                 <li class="slds-item tabButton slds-p-around_x-small">
-                    <a href="#">Home</a>
+                    <a href="#" role="button" name="home" onclick={handleTabClick}>Home</a>
                 </li>
                 <li class="slds-item tabButton">
-                    <a href="#">Products</a>
+                    <a href="#" role="button" name="products" onclick={handleTabClick}>Products</a>
                 </li>
                 <li class="slds-item tabButton">
-                    <a href="#">Sales</a>
+                    <a href="#" role="button" name="sales" onclick={handleTabClick}>Sales</a>
                 </li>
                 <li class="slds-item tabButton">
-                    <a href="#">TBD</a>
+                    <a href="#" role="button" name="contactUs" onclick={handleTabClick}>Contact Us</a>
                 </li>
                 <li class="slds-item tabButton">
                     <a href="#">TBD</a>
@@ -58,7 +58,6 @@
                 </li>
             </ul>
         </div>
-
     </div>
 
 </template>
