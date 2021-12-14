@@ -41,3 +41,10 @@ img {
     background-color: lightcoral;
     border-style: solid;
 }
+
+.body {
+    height: 75em;
+    /* background-color: lightblue; */
+    border-style: solid;
+    padding: 2em;
+}

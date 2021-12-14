@@ -15,15 +15,10 @@
     font-weight: bold;
 }
 
-.noVerticalMargin {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
 .bold {
     font-weight: bold;
 }
 
 .indent {
-    margin-left: 1em;
+    margin-left: 1.5em;
 }
