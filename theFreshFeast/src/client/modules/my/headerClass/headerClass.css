@@ -1,54 +1,41 @@
 *{
     margin:0;
 }
-
 .header-wrapper{
     display: grid;
-    grid-template-columns: auto auto;
-    padding: 5px;
+    grid-template-columns: 55% 45%;
+    margin-top: 10px;
 }
-.grid-item {
+.grid-item{
     padding: 20px;
     font-size: 20px;
 }
-.tag{
-      text-align: right;
-      margin-bottom:10px;
-      margin-right:50px;
-}
 .freshFoodTag{
-      margin-bottom: 10px;
-      font-size: 18px;
+    font-size: 25px;
+    color: #b0091b;
+    font-family: 'Dancing Script', cursive;
 }
 .location{
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 15px 0 0;
 }
 .loc{
-      border: 1px solid #b0091b;
-      padding: 10px;
-      border-radius: 10px;
-      width: 50%;   
-      background-color: #b0091b;
-      color: white;
-      
+    border: 1px solid #b0091b;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;   
+    background-color: #b0091b;
+    color: white; 
 }
 .loctab{
     padding: 5px;
 }
-
-
 .divbtn{
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 0 20px 0 0;
-}
-@media (max-width: 800px) {
-.divbtn {
-    flex-direction: column;
-}
 }
 .btn{
     width:150px;
@@ -57,26 +44,24 @@
     border: 1px solid #b0091b;
     font-weight: bold;
 }
-
 .btn:hover{
     background-color: #b0091b;
     color: white !important;border: 1px solid white; 
 }
-
-
-
-
 .flex-container{
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-
 }
 .flex-container > div {
     margin: 70px;
     padding: 20px;
     font-size: 20px;
     padding: 10px;
+}
+.freshFoodTag{
+    display: flex;
+    align-items: flex-end;
 }
 
 
