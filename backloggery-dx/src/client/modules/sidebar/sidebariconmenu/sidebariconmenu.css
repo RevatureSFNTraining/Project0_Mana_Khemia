@@ -44,7 +44,7 @@
   .multitap {
     font-size: 20px;
     width: 220px;
-    top: 50%;
+    top: 51%;
     background-color: #555 /* Light Black */
   }
 
@@ -58,19 +58,15 @@
 
   /* These two buttons should be smaller than the rest */
   .supportus {
-    line-height: 0px; /* I think this solution is hacky but whatever */
-    height: 12px;
-    width: 180px;
-    font-size: 14px;
+    width: 190px;
+    font-size: 16px;
     top: 85%;
     background-color: #555 /* Light Black */
   }
 
   .about {
-    line-height: 0px; /* I think this solution is hacky but whatever */
-    height: 12px;
-    width: 180px;
-    font-size: 14px;
-    top: 90%;
+    width: 190px;
+    font-size: 16px;
+    top: 91%;
     background-color: #555 /* Light Black */
   }
