@@ -1,0 +1,82 @@
+.center {
+    text-align: center;
+}
+
+.centerVert {
+    margin: auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.toolbar {
+    background-color: bisque;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+    user-select: none;
+}
+
+.tabButton button {
+    color: black;
+    text-decoration: none;
+    background-image: linear-gradient(lightblue, rgb(98, 98, 255), rgb(38, 38, 255));
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.tabButton button:hover {
+    background-image: linear-gradient(rgb(152, 191, 204), rgb(81, 81, 219), rgb(30, 30, 216));
+}
+
+.searchBar {
+    height: 2em;
+    width: 20em;
+}
+
+.searchButton {
+    background-color: lightblue;
+    background-image: url(../../resources/search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    border-width: 1px;
+    border-color: black;
+    height: 2em;
+}
+
+:hover.searchButton {
+    background-color: rgb(150, 189, 202);
+}
+
+.orderButton button {
+    background-color: red;
+    border-style: solid;
+    border-color: blue;
+    border-width: 2px;
+    border-radius: 12px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    min-width: 7em;
+}
+
+.orderButton button:hover {
+    background-color: rgb(214, 0, 0);
+    color: rgb(216, 216, 216);
+    border-color: rgb(0, 0, 206);
+}
+
+.tabButton, .orderButton {
+    margin: 0.5em 0.75em;
+}
+
+.first {
+    margin-left: 5em;
+}

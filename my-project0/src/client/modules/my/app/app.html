@@ -3,14 +3,12 @@
     <!-- Header -->
     <my-header></my-header>
 
-    <div class="slds-grid">
-        <!-- Left Sidebar -->
-        <div class="sidebar center slds-col" style="width: 20%">
-            <my-left-sidebar ontabchange={handleBodyChange}></my-left-sidebar>
-        </div>
+    <!-- Tabs Bar -->
+    <my-toolbar ontabchange={handleBodyChange}></my-toolbar>
 
+    <div class="slds-grid">
         <!-- Body -->
-        <div class="body slds-col" style="width: 60%">
+        <div class="body slds-col" style="width: 70%">
             <!-- home page -->
             <template if:true={homePage}>
                 <my-home-page></my-home-page>
@@ -44,7 +42,7 @@
         </div>
 
         <!-- Right Sidebar -->
-        <div class="sidebar center slds-col" style="width: 20%">
+        <div class="sidebar center slds-col" style="width: 30%">
             <my-right-sidebar></my-right-sidebar>
         </div>
     </div>

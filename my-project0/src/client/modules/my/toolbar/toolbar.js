@@ -1,6 +1,6 @@
 import { LightningElement } from 'lwc';
 
-export default class LeftSidebar extends LightningElement {
+export default class Toolbar extends LightningElement {
     queryTerm;
     search = false;
 

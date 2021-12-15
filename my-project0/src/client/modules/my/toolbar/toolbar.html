@@ -1,0 +1,57 @@
+<template>
+
+    <div class="toolbar">
+        <div class="slds-grid">
+            <!-- Page Tab Links -->
+            <div class="center slds-col">
+                <ul class="slds-button-group-row">
+                    <li class="tabButton slds-button-group-item">
+                        <button class="slds-button slds-button_neutral" name="home"
+                            onclick={handleTabClick}>Home</button>
+                    </li>
+                    <li class="tabButton slds-button-group-item"><button class="slds-button slds-button_neutral"
+                            name="products" onclick={handleTabClick}>Products</button>
+                    </li>
+                    <li class="tabButton slds-button-group-item">
+                        <button class="slds-button slds-button_neutral" name="sales"
+                            onclick={handleTabClick}>Sales</button>
+                    </li>
+                    <li class="tabButton slds-button-group-item">
+                        <button class="slds-button slds-button_neutral" name="contactUs"
+                            onclick={handleTabClick}>Contact
+                            Us</button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Search Bar and Orders Buttons -->
+            <div class="right slds-col">
+                <ul class="slds-button-group-row">
+                    <!-- Search Bar -->
+                    <li class="slds-button-group" role="group">
+                        <!-- Search Input -->
+                        <input class="searchBar centerVert" onchange={handleInputChange} onkeyup={handleKeyUp} name="search"
+                            type="search" placeholder="Search for..."></input>
+
+                        <!-- Search Button -->
+                        <button class="searchButton centerVert slds-button slds-button_neutral" onclick={handleSearch}></button>
+
+                        <!-- Test Output -->
+                        <p class="centerVert" if:true={queryTerm}>
+                            Searched for: {queryTerm}
+                        </p>
+                    </li>
+
+                    <!-- Orders Buttons -->
+                    <li class="orderButton first slds-button-group-item">
+                        <button class="slds-button slds-button_neutral">Cart</button>
+                    </li>
+                    <li class="orderButton slds-button-group-item">
+                        <button class="slds-button slds-button_neutral">Track Orders</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</template>
