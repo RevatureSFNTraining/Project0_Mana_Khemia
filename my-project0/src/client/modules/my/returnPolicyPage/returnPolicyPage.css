@@ -1,0 +1,21 @@
+.title {
+    color: #0000cd;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.red {
+    color: #ff0000;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.indent {
+    margin-left: 1.5em;
+}
+
+.lineSpacing {
+    margin-bottom: 0.5em;
+}

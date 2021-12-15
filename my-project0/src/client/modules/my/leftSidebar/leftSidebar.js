@@ -2,7 +2,6 @@ import { LightningElement } from 'lwc';
 
 export default class LeftSidebar extends LightningElement {
     queryTerm;
-    tabSelected;
     search = false;
 
     handleKeyUp(event) {

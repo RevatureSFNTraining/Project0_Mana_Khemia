@@ -4,41 +4,52 @@
     <my-header></my-header>
 
     <div class="slds-grid">
+        <!-- Left Sidebar -->
         <div class="sidebar center slds-col" style="width: 20%">
-            <!-- Left Sidebar -->
-            <my-left-sidebar ontabchange={handleTabChange}></my-left-sidebar>
+            <my-left-sidebar ontabchange={handleBodyChange}></my-left-sidebar>
         </div>
 
+        <!-- Body -->
         <div class="body slds-col" style="width: 60%">
-            <!-- Body -->
+            <!-- home page -->
             <template if:true={homePage}>
                 <my-home-page></my-home-page>
             </template>
-    
+
             <!-- products page -->
             <!-- (may also make an individual product page) -->
             <template if:true={productsPage}>
                 <my-products-page></my-products-page>
             </template>
-    
+
             <!-- sales page -->
             <template if:true={salesPage}>
                 <my-sales-page></my-sales-page>
             </template>
-    
+
             <!-- contact us page -->
             <template if:true={contactUsPage}>
                 <my-contact-us-page></my-contact-us-page>
             </template>
+
+            <!-- return policy page -->
+            <template if:true={returnPolicyPage}>
+                <my-return-policy-page></my-return-policy-page>
+            </template>
+
+            <!-- privacy/security policy page -->
+            <template if:true={privacyPolicyPage}>
+                <my-privacy-policy-page></my-privacy-policy-page>
+            </template>
         </div>
 
+        <!-- Right Sidebar -->
         <div class="sidebar center slds-col" style="width: 20%">
-            <!-- Right Sidebar -->
             <my-right-sidebar></my-right-sidebar>
         </div>
     </div>
 
     <!-- Footer -->
-    <my-footer></my-footer>
+    <my-footer onpolicychange={handleBodyChange}></my-footer>
 
 </template>

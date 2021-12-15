@@ -1,0 +1,13 @@
+.title {
+    color: #0000cd;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.lineSpacing {
+    margin-bottom: 0.5em;
+}

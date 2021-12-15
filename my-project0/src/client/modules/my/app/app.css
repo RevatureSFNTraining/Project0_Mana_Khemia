@@ -39,12 +39,12 @@ img {
 
 .sidebar {
     background-color: lightcoral;
-    border-style: solid;
+    /* border-style: solid; */
 }
 
 .body {
-    height: 75em;
+    /* height: 75em; */
     /* background-color: lightblue; */
-    border-style: solid;
+    /* border-style: solid; */
     padding: 2em;
 }

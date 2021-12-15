@@ -3,25 +3,23 @@
 }
 
 .header {
-    height: 13em;
     background-color: lightgray;
 }
 
 .siteName {
     color:black;
     font-family: "Cooper Black";
-    font-size: 6.8em;
-    margin-top: auto;
-    margin-bottom: 0.1em;
-    height: 0.9em;
+    font-size: 85px;
+    height: auto;
+    max-height: 100px;
 }
 
 .mission {
     color:blue;
     font-family: "Cooper Black";
     font-size: 1.7em;
-    margin-top: auto;
-    margin-bottom: 0.1em;
+    margin: 0;
+    padding: 0;
 }
 
 .phone {
@@ -29,5 +27,6 @@
     font-family: "Arial";
     font-size: 2.5em;
     font-weight: bold;
-    margin-top: auto;
+    margin: 0;
+    padding: 0;
 }
