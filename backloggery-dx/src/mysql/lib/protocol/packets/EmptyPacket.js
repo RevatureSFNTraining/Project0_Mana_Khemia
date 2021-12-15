@@ -1,0 +1,1 @@
+function EmptyPacket(){}module.exports=EmptyPacket,EmptyPacket.prototype.parse=function(){},EmptyPacket.prototype.write=function(){};

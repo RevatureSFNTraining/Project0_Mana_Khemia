@@ -1,0 +1,1 @@
+function PacketHeader(e,t){this.length=e,this.number=t}module.exports=PacketHeader;

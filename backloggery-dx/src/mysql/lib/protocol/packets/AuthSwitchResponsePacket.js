@@ -1,0 +1,1 @@
+function AuthSwitchResponsePacket(t){t=t||{},this.data=t.data}module.exports=AuthSwitchResponsePacket,AuthSwitchResponsePacket.prototype.parse=function(t){this.data=t.parsePacketTerminatedBuffer()},AuthSwitchResponsePacket.prototype.write=function(t){t.writeBuffer(this.data)};

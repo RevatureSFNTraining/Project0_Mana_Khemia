@@ -1,0 +1,1 @@
+function ComQueryPacket(e){this.command=3,this.sql=e}module.exports=ComQueryPacket,ComQueryPacket.prototype.write=function(e){e.writeUnsignedNumber(1,this.command),e.writeString(this.sql)},ComQueryPacket.prototype.parse=function(e){this.command=e.parseUnsignedNumber(1),this.sql=e.parsePacketTerminatedString()};

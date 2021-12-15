@@ -1,0 +1,1 @@
+function UseOldPasswordPacket(t){t=t||{},this.firstByte=t.firstByte||254}module.exports=UseOldPasswordPacket,UseOldPasswordPacket.prototype.parse=function(t){this.firstByte=t.parseUnsignedNumber(1)},UseOldPasswordPacket.prototype.write=function(t){t.writeUnsignedNumber(1,this.firstByte)};

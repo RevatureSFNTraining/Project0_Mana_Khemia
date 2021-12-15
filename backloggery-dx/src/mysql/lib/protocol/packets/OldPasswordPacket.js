@@ -1,0 +1,1 @@
+function OldPasswordPacket(e){e=e||{},this.scrambleBuff=e.scrambleBuff}module.exports=OldPasswordPacket,OldPasswordPacket.prototype.parse=function(e){this.scrambleBuff=e.parsePacketTerminatedBuffer()},OldPasswordPacket.prototype.write=function(e){e.writeBuffer(this.scrambleBuff)};

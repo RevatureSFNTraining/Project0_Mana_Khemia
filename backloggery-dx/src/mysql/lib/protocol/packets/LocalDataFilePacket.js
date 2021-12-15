@@ -1,0 +1,1 @@
+function LocalDataFilePacket(t){this.data=t}module.exports=LocalDataFilePacket,LocalDataFilePacket.prototype.write=function(t){t.writeBuffer(this.data)};

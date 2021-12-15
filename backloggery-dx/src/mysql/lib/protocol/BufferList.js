@@ -1,0 +1,1 @@
+function BufferList(){this.bufs=[],this.size=0}module.exports=BufferList,BufferList.prototype.shift=function(){var t=this.bufs.shift();return t&&(this.size-=t.length),t},BufferList.prototype.push=function(t){t&&t.length&&(this.bufs.push(t),this.size+=t.length)};

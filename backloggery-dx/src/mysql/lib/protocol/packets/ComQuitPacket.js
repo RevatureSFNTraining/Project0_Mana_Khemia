@@ -1,0 +1,1 @@
+function ComQuitPacket(){this.command=1}module.exports=ComQuitPacket,ComQuitPacket.prototype.parse=function(t){this.command=t.parseUnsignedNumber(1)},ComQuitPacket.prototype.write=function(t){t.writeUnsignedNumber(1,this.command)};

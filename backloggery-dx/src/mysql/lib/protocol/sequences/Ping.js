@@ -1,0 +1,1 @@
+var Sequence=require("./Sequence"),Util=require("util"),Packets=require("../packets");function Ping(e,t){t||"function"!=typeof e||(t=e,e={}),Sequence.call(this,e,t)}module.exports=Ping,Util.inherits(Ping,Sequence),Ping.prototype.start=function(){this.emit("packet",new Packets.ComPingPacket)};

@@ -1,0 +1,1 @@
+var PoolSelector=module.exports={};PoolSelector.RR=function(){var o=0;return function(n){return o>=n.length&&(o=0),n[o++]}},PoolSelector.RANDOM=function(){return function(o){return o[Math.floor(Math.random()*o.length)]}},PoolSelector.ORDER=function(){return function(o){return o[0]}};

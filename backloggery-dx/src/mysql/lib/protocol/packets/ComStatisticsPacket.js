@@ -1,0 +1,1 @@
+function ComStatisticsPacket(){this.command=9}module.exports=ComStatisticsPacket,ComStatisticsPacket.prototype.write=function(t){t.writeUnsignedNumber(1,this.command)},ComStatisticsPacket.prototype.parse=function(t){this.command=t.parseUnsignedNumber(1)};

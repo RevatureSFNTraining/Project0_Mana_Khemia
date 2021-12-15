@@ -1,0 +1,1 @@
+function ResultSet(e){this.resultSetHeaderPacket=e,this.fieldPackets=[],this.eofPackets=[],this.rows=[]}module.exports=ResultSet;

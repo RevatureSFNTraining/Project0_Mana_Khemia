@@ -1,0 +1,1 @@
+function ComPingPacket(){this.command=14}module.exports=ComPingPacket,ComPingPacket.prototype.write=function(n){n.writeUnsignedNumber(1,this.command)},ComPingPacket.prototype.parse=function(n){this.command=n.parseUnsignedNumber(1)};
