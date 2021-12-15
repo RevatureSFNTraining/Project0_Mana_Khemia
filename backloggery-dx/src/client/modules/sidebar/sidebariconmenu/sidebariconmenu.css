@@ -1,0 +1,76 @@
+/* Style the links inside the sidenav */
+
+.sidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -140px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    text-decoration: none; /* Remove underline */
+    color: transparent; /* Make all text invisible until hovered */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  }
+  
+  .sidenav a:hover {
+    color: white;
+    left: 0; /* On mouse-over, translates boxes to be on-screen */
+  }
+  
+  .home {
+    width: 220px;
+    font-size: 20px;
+    top: 5%;
+    background-color: #04AA6D;
+  }
+  
+
+  /* This button is larger than the rest (because it's the most important) */
+  .mybackloggery {
+    line-height: 50px;
+    font-size: 20px;
+    width: 240px;
+    height: 80px;
+    top: 28%; /* non-uniform with the rest because it's slightly bigger */
+    background-color: #aeb1be; /* flush with the shading on the icon */
+  }
+  
+  .mygames {
+    line-height: 40px;
+    font-size: 20px;
+    width: 220px;
+    top: 40%;
+    background-color: #f44336; /* Red */
+  }
+  
+  .multitap {
+    font-size: 20px;
+    width: 220px;
+    top: 50%;
+    background-color: #555 /* Light Black */
+  }
+
+  .account {
+    font-size: 20px;
+    width: 220px;
+    top: 75%;
+    background-color: #555 /* Light Black */
+  }
+
+
+  /* These two buttons should be smaller than the rest */
+  .supportus {
+    line-height: 0px; /* I think this solution is hacky but whatever */
+    height: 12px;
+    width: 180px;
+    font-size: 14px;
+    top: 85%;
+    background-color: #555 /* Light Black */
+  }
+
+  .about {
+    line-height: 0px; /* I think this solution is hacky but whatever */
+    height: 12px;
+    width: 180px;
+    font-size: 14px;
+    top: 90%;
+    background-color: #555 /* Light Black */
+  }

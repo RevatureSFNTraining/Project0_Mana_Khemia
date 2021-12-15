@@ -2,11 +2,14 @@
 import '@lwc/synthetic-shadow';
 import { createElement } from 'lwc';
 //import MyApp from 'my/app';
-import WelcomeSplash from 'welcome/welcomesplash';
+//import WelcomeSplash from 'welcome/welcomesplash';
+import SidebarBase from 'sidebar/sidebarbase';
 
 
-const welcomesplash = createElement('welcome-splash', { is: WelcomeSplash });
+const sidebarbase = createElement('sidebar-base', { is: SidebarBase });
+//const welcomesplash = createElement('welcome-splash', { is: WelcomeSplash });
 //const app = createElement('my-app', { is: MyApp });
 // eslint-disable-next-line @lwc/lwc/no-document-query
 //document.querySelector('#main').appendChild(app);
-document.querySelector('#main').appendChild(welcomesplash);
+//document.querySelector('#main').appendChild(welcomesplash);
+document.querySelector('#main').appendChild(sidebarbase);

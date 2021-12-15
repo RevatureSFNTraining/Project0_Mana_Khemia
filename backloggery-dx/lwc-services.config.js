@@ -12,7 +12,6 @@ module.exports = {
                 { from: 'node_modules/mysql',
                     to: 'dist/mysql'}
         
-        
             ],
         
             sourceDir: './src/client',
