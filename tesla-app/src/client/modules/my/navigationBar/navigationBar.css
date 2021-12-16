@@ -1,16 +1,16 @@
 .navigation_bar {
   display: flex;
-  align-items: center;
   justify-content: flex-start;
   background-color: transparent;
-  height: 100%;
+  align-items: center;
   width: 100%;
+  margin: 0 auto;
 }
 
 .left {
   flex: 1;
   height: 100%;
-  background-color: transparent;
+  width: 100%;
 }
 
 img {
@@ -18,15 +18,13 @@ img {
   width: 100%;
   margin-left: 10px;
   margin-right: 10px;
-  background-color: transparent;
-  opacity: 0.6;
 }
 
 .middle {
   flex: 10;
   max-height: 100%;
   max-width: 100%;
-  background-color: transparent;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -49,5 +47,4 @@ button:hover {
 .right {
   flex: 1;
   height: 100%;
-  background-color: transparent;
 }
