@@ -22,7 +22,7 @@
               <button onclick={handleHomeClick} class="slds-button slds-button_neutral btn">Home</button>
             </div>
             <div>
-              <button class="slds-button slds-button_neutral btn">Classic Menu</button>
+              <button onclick={handleMenuClick} class="slds-button slds-button_neutral btn">Classic Menu</button>
             </div>
             <div>
               <button class="slds-button slds-button_neutral btn">Daily Special</button>
@@ -48,4 +48,7 @@
     <div  if:true = {showHomePage}>
       <my-home-page></my-home-page>
    </div>
+   <div  if:true = {showMenuPage}>
+    <my-menu-page></my-menu-page>
+ </div>
 </template>

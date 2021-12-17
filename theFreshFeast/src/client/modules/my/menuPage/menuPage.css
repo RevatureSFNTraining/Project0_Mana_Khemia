@@ -1,0 +1,51 @@
+.flex-container {
+    display: flex;
+    margin: 20px 40px 0 40px;
+    
+}
+
+.flex-child {
+    flex: 1;
+    border-bottom: 2px dashed #b0091b;
+    padding-bottom: 10px;
+}  
+
+.flex-child:first-child {
+    margin-right: 80px;
+} 
+
+.veg{
+    margin: 40px 40px 0 40px;
+    border-bottom: 2px dashed #b0091b;
+    padding-bottom: 10px;
+}
+.nonveg{
+    margin: 80px 40px 0 40px;
+    border-bottom: 2px dashed #b0091b;
+    padding-bottom: 10px;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #b0091b;
+    color: white;
+    text-align: center;
+    height: 100px;
+    margin-top: 50px;
+ }
+ .footerp{
+     margin: auto;
+     padding: 40px;
+ }
+
+ .p{
+     font-size: 20px;
+     font-family: 'Dancing Script', cursive;
+ }
+ .vegp{
+     font-size: 40px;
+     text-align: center;
+     font-family: 'Dancing Script', cursive;
+ }
