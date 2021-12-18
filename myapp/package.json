@@ -1,8 +1,8 @@
 {
-    "name": "johnnieo",
+    "name": "myapp",
     "version": "0.0.1",
     "author": "johnnieasibuo",
-    "bugs": "https://github.com/johnnieasibuo/johnnieo/issues",
+    "bugs": "https://github.com/johnnieasibuo/myapp/issues",
     "dependencies": {
         "compression": "^1.7.4",
         "express": "^4.17.1",
@@ -13,7 +13,7 @@
         "npm": ">=6.4.1",
         "yarn": ">=1.9.4"
     },
-    "homepage": "https://github.com/johnnieasibuo/johnnieo",
+    "homepage": "https://github.com/johnnieasibuo/myapp",
     "keywords": [
         "lwc"
     ],
@@ -29,7 +29,7 @@
         ],
         "exec": "node ./src/server/api.js"
     },
-    "repository": "johnnieasibuo/johnnieo",
+    "repository": "johnnieasibuo/myapp",
     "scripts": {
         "build": "lwc-services build -m production",
         "build:development": "lwc-services build",
