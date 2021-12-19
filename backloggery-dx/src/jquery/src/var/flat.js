@@ -1,0 +1,1 @@
+define(["./arr"],(function(n){"use strict";return n.flat?function(t){return n.flat.call(t)}:function(t){return n.concat.apply([],t)}}));

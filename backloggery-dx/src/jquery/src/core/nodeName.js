@@ -1,0 +1,1 @@
+define((function(){"use strict";return function(e,n){return e.nodeName&&e.nodeName.toLowerCase()===n.toLowerCase()}}));

@@ -1,0 +1,1 @@
+define((function(){"use strict";return function(n,t,e){var r,i,f={};for(i in t)f[i]=n.style[i],n.style[i]=t[i];for(i in r=e.call(n),t)n.style[i]=f[i];return r}}));

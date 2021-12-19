@@ -1,0 +1,1 @@
+define(["../var/rnothtmlwhite"],(function(t){"use strict";return function(n){return(n.match(t)||[]).join(" ")}}));

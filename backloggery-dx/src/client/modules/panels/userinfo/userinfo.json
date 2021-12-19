@@ -1,0 +1,15 @@
+{
+    "name" : "null",
+    "avatar": "null",
+    "email" : "null",
+    "dateJoined" : "null",
+    "pronouns": "null",
+    "region": "null",
+    "description": "null",
+    "socialMedia" : {
+        "steamCommunityId": "null",
+        "twitterName": "null",
+        "twitchName": "null",
+        "youtubeChannelId": "null"
+    }
+}

@@ -10,7 +10,12 @@ module.exports = {
                 { from: 'node_modules/mysql',
                     to: 'src/mysql'},
                 { from: 'node_modules/mysql',
-                    to: 'dist/mysql'}
+                    to: 'dist/mysql'},
+                { from: 'node_modules/jquery',
+                    to: 'src/jquery'},
+                { from: 'node_modules/jquery',
+                    to: 'dist/jquery'}
+        
         
             ],
         

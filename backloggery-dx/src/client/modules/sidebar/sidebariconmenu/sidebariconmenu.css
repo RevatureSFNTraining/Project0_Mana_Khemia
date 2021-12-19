@@ -26,7 +26,7 @@
   /* This button is larger than the rest (because it's the most important) */
   .mybackloggery {
     line-height: 50px;
-    font-size: 20px;
+    font-size: 25px;
     width: 240px;
     height: 80px;
     top: 28%; /* non-uniform with the rest because it's slightly bigger */
@@ -45,14 +45,14 @@
     font-size: 20px;
     width: 220px;
     top: 51%;
-    background-color: #555 /* Light Black */
+    background-color: #036642;
   }
 
   .account {
     font-size: 20px;
     width: 220px;
     top: 75%;
-    background-color: #555 /* Light Black */
+    background-color: #333333
   }
 
 
@@ -61,12 +61,12 @@
     width: 190px;
     font-size: 16px;
     top: 85%;
-    background-color: #555 /* Light Black */
+    background-color: #444444;
   }
 
   .about {
     width: 190px;
     font-size: 16px;
     top: 91%;
-    background-color: #555 /* Light Black */
+    background-color: #444444; /* Light Black */
   }

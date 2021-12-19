@@ -1,5 +1,5 @@
 <template>
-  <template if:false={dontShow}>
+  <div class="welcomesplash" if:false={dontShow}>
     <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_small" aria-labelledby="welcome-mat-118-label" aria-describedby="welcome-mat-118-content" aria-modal="true">
         <div class="slds-modal__container">
           <header class="slds-modal__header slds-modal__header_empty">
@@ -151,5 +151,5 @@
         </div>
       </section>
       <div class="slds-backdrop slds-backdrop_open"></div>
-      </template>
+    </div>
 </template>
