@@ -1,6 +1,15 @@
 .center {
     text-align: center;
 }
+
+/*.cnav {
+    text-align: center;
+}*/
+
+/*.angelcenter {
+    text-align: center;
+    margin-left: 30px;
+}*/
 .link {
     border: none;
     padding: 10px;
@@ -35,4 +44,12 @@ img {
 
 .greeting {
     height: 75px;
+}
+
+
+
+.center2 {
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(163, 114, 41);
 }

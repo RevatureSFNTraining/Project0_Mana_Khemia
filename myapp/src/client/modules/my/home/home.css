@@ -1,0 +1,49 @@
+.angel {
+    font-size: x-large;
+    color: rgb(36, 30, 13);
+
+}
+
+footer {
+    display: block;
+    font-size: large;
+  }
+
+
+  /*.serviceimg {
+    float: inline;
+    width:  200px;
+    height: 200px;
+    margin-left: 320px;
+    
+}*/
+
+h2 {
+    color: rgb(163, 114, 41);
+}
+
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+  @media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  } 
+
+  .header2
+  {
+      font-weight: bold;
+      font-size: 50px;
+      color: rgb(163, 114, 41);
+  }
+
+  .footer {
+    display: block;
+  }
