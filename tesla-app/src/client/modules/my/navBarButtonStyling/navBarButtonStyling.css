@@ -1,0 +1,15 @@
+button {
+  font-size: medium;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: aliceblue;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20%;
+}

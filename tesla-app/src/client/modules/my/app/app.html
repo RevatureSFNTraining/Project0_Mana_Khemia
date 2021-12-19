@@ -1,7 +1,18 @@
 <template>
   <div class="page">
     <div class="navigation_bar">
-      <my-navigation-bar></my-navigation-bar>
+      <div class="left">
+        <img src='./resources/images/tesla_logo.png' alt='Tesla' class='logo' />
+      </div>
+      <div class="middle">
+        <my-model-s-button onbuttonclick={handleModelSClick}></my-model-s-button>
+        <my-model-3-button onbuttonclick={handleModel3Click}></my-model-3-button>
+        <my-model-x-button onbuttonclick={handleModelXClick}></my-model-x-button>
+        <my-model-y-button onbuttonclick={handleModelYClick}></my-model-y-button>
+      </div>
+      <div class="right">
+        <my-account-button onbuttonclick={handleAccountClick}></my-account-button>
+      </div>
     </div>
     <div class="content">
       <div class="product_title">
