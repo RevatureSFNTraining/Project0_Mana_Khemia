@@ -47,3 +47,19 @@ h2 {
   .footer {
     display: block;
   }
+
+  .serv {
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .checklabel {
+    font-size: 20px;
+  }
+
+  .checksize {
+      width: 60px;
+      height: 30px;
+  }
+
+ 

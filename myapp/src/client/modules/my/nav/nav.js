@@ -1,5 +1,6 @@
 import { LightningElement } from 'lwc';
 
-export default class Navbar extends LightningElement {
+export default class Nav extends LightningElement {
+
     
 }

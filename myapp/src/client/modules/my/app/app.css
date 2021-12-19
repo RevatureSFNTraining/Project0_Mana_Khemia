@@ -2,7 +2,8 @@
     text-align: center;
 }
 
-/*.cnav {
+/*
+.cnav {
     text-align: center;
 }*/
 
@@ -46,10 +47,47 @@ img {
     height: 75px;
 }
 
-
-
 .center2 {
     text-align: center;
     font-weight: bolder;
     color: rgb(163, 114, 41);
 }
+
+/*ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20;
+  }*/
+
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    /*width: 50px;*/
+    text-align: center;
+    text-decoration: solid;
+    margin: 2px 2px;
+    border-radius: 10%;
+  }
+  
+  .fa fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  
+
+  .fa fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+ 

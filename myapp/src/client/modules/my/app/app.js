@@ -1,3 +1,5 @@
-import { LightningElement } from 'lwc';
+import { LightningElement, wire } from 'lwc';
 
-export default class App extends LightningElement {}
+export default class App extends LightningElement {
+
+}

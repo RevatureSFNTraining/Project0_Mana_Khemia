@@ -1,4 +1,26 @@
-.slds-context-bar {
-    text-align: center;
+.navcenter {
+    width: 100%;
+    margin-bottom: 10px;
 }
+
+.slds-truncate {
+    font-size:large;
+    /*padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color:#FFFFFF;
+    background-color:#000000;
+    float: left; */
+    }
+
+    /*.slds-truncate {
+        margin: 0px;
+        display: flex;
+      }
+
+.slds-context-bar {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+} */
 
