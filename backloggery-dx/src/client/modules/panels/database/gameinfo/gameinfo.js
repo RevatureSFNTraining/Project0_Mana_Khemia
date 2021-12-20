@@ -1,8 +1,5 @@
-import { LightningElement } from 'lwc';
-
-export default class GameInfo extends LightningElement {
-    gameMetadata = {
-        game: {
+export default class GameInfo {
+        /* metadata =  {
             name: null,
             system: null,
             developer: null,
@@ -17,10 +14,19 @@ export default class GameInfo extends LightningElement {
             completionStatus: null,
             isMastered: null,
             completionNote: null,
+			isNowPlaying: null,
             review: null,
             region: null,
             inCompilation: null, //used for DLC entries or compilation
             emulatedOn: null //used for emulated rereleases (WiiVC)
-        }
-    };
+        }; */
+    
+    addInfo(gameInfo, infoType, infoValue) {
+        return Object.assign(gameInfo, {infoType: infoValue});
+    }
+
+    newGame(gameName, gameSystem) {
+        return {'name': gameName,
+                'system': gameSystem};
+    }
 }

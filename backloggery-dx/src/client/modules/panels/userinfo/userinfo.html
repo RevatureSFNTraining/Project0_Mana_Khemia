@@ -1,1 +1,164 @@
-<template></template>
+<template>
+    <article class="userinfocard slds-card slds-size_1-of-3 slds-is-absolute">
+        <div class="slds-card__header slds-grid">
+          <header class="slds-media slds-media_center slds-has-flexi-truncate">
+            <div class="slds-media__figure">
+              <span class="slds-icon_container" title="account">
+                <img src={userInfo.avatar} width='50px' height='50px'>
+                 <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left slds-hide" role="tooltip" id="userhoverinfo" style="position:absolute;top:60px;left:20px">
+                  <div class="slds-popover__body">Pronouns: {userInfo.pronouns}<br>Date Joined: {userInfo.dateJoined}<br>Region: {userInfo.region}</div>
+                 </div>
+                <span class="slds-assistive-text">More User Info</span>
+              </span>
+            </div>
+            <div class="slds-media__body">
+              <h2 class="slds-card__header-title">
+                <a href="#" class="slds-card__header-link slds-truncate" title="Accounts">
+                  <span>{userInfo.name}</span>
+                </a>
+              </h2>
+            </div>
+            <div class="slds-no-flex">
+                <a href={steamCommunityLink}>
+                    <img src="../../../resources/userinfoicons/steam.png" width="20" height="20">
+                </a>
+                <a href={twitterLink}>
+                    <img src="../../../resources/userinfoicons/twitter.png" width="20" height="20">
+                </a>
+                <a href={twitchLink}>
+                    <img src="../../../resources/userinfoicons/twitch.png" width="20" height="20">
+                </a>
+                <a href={youtubeChannelLink}>
+                    <img src="../../../resources/userinfoicons/youtube.png" width="20" height="20">
+                </a>
+            </div>
+          </header>
+        </div>
+        <div class="slds-card__body slds-card__body_inner">{userInfo.description}</div>
+
+
+        <footer class="slds-card__footer">
+          <a class="slds-card__footer-action" href="#">Now Playing
+            <span class="slds-assistive-text">Now Playing</span>
+          </a>
+
+
+          <ul class="slds-accordion">
+            <li class="slds-accordion__list-item" if:true={nowPlaying1}>
+              <section class="slds-accordion__section">
+                <div class="slds-accordion__summary">
+                  <h2 class="slds-accordion__summary-heading">
+                    <button class="slds-button slds-button_reset slds-accordion__summary-action" aria-controls="referenceId-45" aria-expanded="false" title="Accordion summary" onclick={nowPlaying1Clicked}>
+                      <svg class="slds-accordion__summary-action-icon slds-button__icon slds-button__icon_left" aria-hidden="true">
+                        <use xlink:href="../../../SLDS/icons/utility-sprite/svg/symbols.svg#switch"></use>
+                      </svg>
+                      <span class="slds-accordion__summary-content">
+                        <img src='{nowPlaying1.completionStatus}' width='30' height='30' if:false={nowPlaying1.isMastered}>
+                        <img src='../../../resources/completionstatus/mastered.png' width='30' height='30' if:true={nowPlaying1.isMastered}>
+                        &ensp;{nowPlaying1.name} [{nowPlaying1.system}]
+                      </span>
+                    </button>
+                  </h2>
+                </div>
+                <div hidden="" class="slds-accordion__content" id="referenceId-45">Accordion details - A</div>
+              </section>
+            </li>
+            <li class="slds-accordion__list-item" if:true={nowPlaying2}>
+              <section class="slds-accordion__section">
+                <div class="slds-accordion__summary">
+                  <h2 class="slds-accordion__summary-heading">
+                    <button class="slds-button slds-button_reset slds-accordion__summary-action" aria-controls="referenceId-46" aria-expanded="false" title="Accordion summary" onclick={nowPlaying2Clicked}>
+                      <svg class="slds-accordion__summary-action-icon slds-button__icon slds-button__icon_left" aria-hidden="true">
+                        <use xlink:href="../../../SLDS/icons/utility-sprite/svg/symbols.svg#switch"></use>
+                      </svg>
+                      <span class="slds-accordion__summary-content">
+                        <img src='{nowPlaying2.completionStatus}' width='30' height='30' if:false={nowPlaying2.isMastered}>
+                        <img src='../../../resources/completionstatus/mastered.png' width='30' height='30' if:true={nowPlaying2.isMastered}>
+                        &ensp;{nowPlaying2.name} [{nowPlaying2.system}]
+                      </span>
+                    </button>
+                  </h2>
+                </div>
+                <div hidden="" class="slds-accordion__content" id="referenceId-46">Accordion details - B</div>
+              </section>
+            </li>
+            <li class="slds-accordion__list-item" if:true={nowPlaying3}>
+              <section class="slds-accordion__section">
+                <div class="slds-accordion__summary">
+                  <h2 class="slds-accordion__summary-heading">
+                    <button class="slds-button slds-button_reset slds-accordion__summary-action" aria-controls="referenceId-47" aria-expanded="false" title="Accordion summary" onclick={nowPlaying3Clicked}>
+                      <svg class="slds-accordion__summary-action-icon slds-button__icon slds-button__icon_left" aria-hidden="true">
+                        <use xlink:href="../../../SLDS/icons/utility-sprite/svg/symbols.svg#switch"></use>
+                      </svg>
+                      <span class="slds-accordion__summary-content">
+                        <img src='{nowPlaying3.completionStatus}' width='30' height='30' if:false={nowPlaying3.isMastered}>
+                        <img src='../../../resources/completionstatus/mastered.png' width='30' height='30' if:true={nowPlaying3.isMastered}>
+                        &ensp;{nowPlaying3.name} [{nowPlaying3.system}]
+                      </span>
+                    </button>
+                  </h2>
+                </div>
+                <div hidden="" class="slds-accordion__content" id="referenceId-47">Accordion details - C</div>
+              </section>
+            </li>
+          </ul>          
+
+          <div class="slds-section slds-is-open" if:true={expandedNP1Showing}>
+            <h3 class="slds-section__title">
+              <button aria-controls="expando-np1" aria-expanded="true" class="slds-button slds-section__title-action" onclick={nowPlaying1ExpandedClicked}>
+                <span class="slds-truncate" title="Section Title">
+                  <img src='{nowPlaying1.completionStatus}' width='30' height='30' if:false={nowPlaying1.isMastered}>
+                  <img src='../../../resources/completionstatus/mastered.png' width='30' height='30' if:true={nowPlaying1.isMastered}>
+                  &ensp;{nowPlaying1.name} [{nowPlaying1.system}]</span>
+              </button>
+            </h3>
+            <div aria-hidden="false" class="slds-section__content" id="expando-np1">
+              <img src={nowPlaying1.boxart} width='120' height='120' if:true={nowPlaying1.boxart}>
+              <p>
+                <br>
+                Developer: {nowPlaying1.developer} / Publisher: {nowPlaying1.publisher}<br>
+                Release Date: {nowPlaying1.releaseDate}<br>
+                Genre: {nowPlaying1.genre}<br>
+                Started: {nowPlaying1.startDate} (Play Time: {nowPlaying1.playTime})<br>
+                {nowPlaying1.completionNote}
+              </p>
+            </div>
+          </div>
+
+          <div class="slds-section slds-is-open" if:true={expandedNP2Showing}>
+            <h3 class="slds-section__title">
+              <button aria-controls="expando-np2" aria-expanded="true" class="slds-button slds-section__title-action" onclick={nowPlaying2ExpandedClicked}>
+                <span class="slds-truncate" title="Section Title">
+                  <img src='{nowPlaying2.completionStatus}' width='30' height='30' if:false={nowPlaying2.isMastered}>
+                  <img src='../../../resources/completionstatus/mastered.png' width='30' height='30' if:true={nowPlaying2.isMastered}>
+                  &ensp;{nowPlaying2.name} [{nowPlaying2.system}]</span>
+              </button>
+            </h3>
+            <div aria-hidden="false" class="slds-section__content" id="expando-np2">
+              <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.</p>
+            </div>
+          </div>
+
+          <div class="slds-section slds-is-open" if:true={expandedNP3Showing}>
+            <h3 class="slds-section__title">
+              <button aria-controls="expando-np3" aria-expanded="true" class="slds-button slds-section__title-action" onclick={nowPlaying3ExpandedClicked}>
+                <span class="slds-truncate" title="Section Title">
+                  <img src='{nowPlaying3.completionStatus}' width='30' height='30' if:false={nowPlaying3.isMastered}>
+                  <img src='../../../resources/completionstatus/mastered.png' width='30' height='30' if:true={nowPlaying3.isMastered}>
+                  &ensp;{nowPlaying3.name} [{nowPlaying3.system}]</span>
+              </button>
+            </h3>
+            <div aria-hidden="false" class="slds-section__content" id="expando-np3">
+              <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.</p>
+            </div>
+          </div>
+
+
+
+        </footer>
+
+
+      </article>
+</template>

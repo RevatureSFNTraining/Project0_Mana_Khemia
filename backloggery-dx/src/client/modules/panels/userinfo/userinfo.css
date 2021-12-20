@@ -1,0 +1,10 @@
+.userinfocard {
+    position: absolute;
+    left: 200px;
+    top: 10%;
+}
+
+img:hover + .slds-popover.slds-popover_tooltip.slds-hide {
+    background-color: #444444;
+    display : block!important;
+}
