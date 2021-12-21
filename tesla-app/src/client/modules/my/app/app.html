@@ -8,19 +8,19 @@
           <img src='./resources/images/tesla_logo.png' alt='Tesla' class='logo' />
         </div>
         <div class="middle">
-          <my-model-s-button onbuttonclick={handleButtonClick}></my-model-s-button>
-          <my-model-3-button onbuttonclick={handleButtonClick}></my-model-3-button>
-          <my-model-x-button onbuttonclick={handleButtonClick}></my-model-x-button>
-          <my-model-y-button onbuttonclick={handleButtonClick}></my-model-y-button>
+          <my-navigation-button onbuttonclick={handleButtonClick} name="Model S"></my-navigation-button>
+          <my-navigation-button onbuttonclick={handleButtonClick} name="Model 3"></my-navigation-button>
+          <my-navigation-button onbuttonclick={handleButtonClick} name="Model X"></my-navigation-button>
+          <my-navigation-button onbuttonclick={handleButtonClick} name="Model Y"></my-navigation-button>
         </div>
         <div class="right">
-          <my-account-button onbuttonclick={handleButtonClick}></my-account-button>
+          <my-navigation-button onbuttonclick={handleButtonClick} name="Account"></my-navigation-button>
         </div>
       </div>
       <!--Website Content-->
       <div class="content">
         <div class="product_title">
-          <my-product-title></my-product-title>
+          <my-product-title producttitle="Model S" productsubtitle="Plaid"></my-product-title>
         </div>
         <div class="product_details">
           <my-product-details></my-product-details>

@@ -1,18 +1,27 @@
 import { LightningElement } from 'lwc';
 
 export default class App extends LightningElement {
-  modelS = true;
+  // Booleans for conditional rendering pages
+  modelS = true;  // Also used for homepage
   model3 = false;
   modelX = false;
   modelY = false;
   account = false;
+
+  // Product details
+  modelSDetail = "";
+  model3Detail = "";
+  modelXDetail = "";
+  modelYDetail = "";
+
+  // Tracks which button was clicked
   buttonClicked = "";
 
   handleButtonClick(e) {
     this.buttonClicked = e.detail;
     switch (this.buttonClicked) {
       // Model 3 page
-      case "model3":
+      case "Model 3":
         if (this.modelS != false) {
           this.modelS = false;
         }
@@ -30,7 +39,7 @@ export default class App extends LightningElement {
         }
         break;
       // Model X page
-      case "modelX":
+      case "Model X":
         if (this.modelS != false) {
           this.modelS = false;
         }
@@ -48,7 +57,7 @@ export default class App extends LightningElement {
         }
         break;
       // Model Y page
-      case "modelY":
+      case "Model Y":
         if (this.modelS != false) {
           this.modelS = false;
         }
@@ -66,7 +75,7 @@ export default class App extends LightningElement {
         }
         break;
       // Account
-      case "account":
+      case "Account":
         if (this.modelS != false) {
           this.modelS = false;
         }
