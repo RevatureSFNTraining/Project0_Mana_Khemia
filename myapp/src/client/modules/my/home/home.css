@@ -1,6 +1,6 @@
 .angel {
     font-size: x-large;
-    color: rgb(36, 30, 13);
+    color: rgb(124, 82, 82);
 
 }
 
@@ -50,11 +50,15 @@ h2 {
 
   .serv {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 26px;
+    font-style: italic;
+    color: rgb(102, 81, 81);
   }
 
+  
   .checklabel {
     font-size: 20px;
+    color:rgb(29, 25, 25);
   }
 
   .checksize {

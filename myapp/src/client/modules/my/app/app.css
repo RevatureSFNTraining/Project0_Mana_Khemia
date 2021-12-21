@@ -2,6 +2,7 @@
     text-align: center;
 }
 
+
 /*
 .cnav {
     text-align: center;
@@ -52,6 +53,13 @@ img {
     font-weight: bolder;
     color: rgb(163, 114, 41);
 }
+
+ul {
+   font-size: medium;
+   color:rgb(129, 189, 73);
+
+}
+
 
 /*ul {
     list-style-type: none;
