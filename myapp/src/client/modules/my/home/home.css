@@ -4,11 +4,14 @@
 
 }
 
+.center {
+  text-align: center;
+}
+
 footer {
     display: block;
     font-size: large;
   }
-
 
   /*.serviceimg {
     float: inline;

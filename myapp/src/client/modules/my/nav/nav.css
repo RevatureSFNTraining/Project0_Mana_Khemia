@@ -1,93 +1,94 @@
 
 ul.topnav {
-    width: 100%;
-    list-style-type:none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(199, 207, 197);
-    font-size: large;
-    position: fixed; 
-    top: 0;
-    text-align: center;
-    
-  }
+  width: 100%;
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(199, 207, 197);
+  font-size: large;
+  position: fixed; 
+  top: 0;
+  text-align: center;
+  
+}
 
- li a {
-    display: block;
-    color: rgb(124, 82, 82);
-    padding: 14px 16px;
-    text-decoration: none;
-    float: center; /*centers nav vertically */
-    font-style: italic;
-    font-weight:900;
-  } 
+li a {
+  display: block;
+  color: rgb(124, 82, 82);
+  padding: 14px 16px;
+  text-decoration: none;
+  float: center; /*centers nav vertically */
+  font-style: italic;
+  font-weight:900;
+} 
 
 .topnav{
-    border:1px solid #c9984e;
-    border-width:4px;
-    list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;
+  border:1px solid #c9984e;
+  border-width:4px;
+  list-style:none;
+  margin:0;
+  padding:0;
+  text-align:center;
 }
 .topnav li{
-    display:inline;
+  display:inline;
 }
 .topnav a{
-    display:inline-block;
-    padding:10px;
+  display:inline-block;
+  padding:10px;
 }
 
-  /* Change the color of links on hover */
+/* Change the color of links on hover */
 .topnav a:hover {
-    background-color: rgb(131, 128, 121); /*rgb(29, 25, 25);*/
-    color:rgb(158, 86, 19);
+  background-color: rgb(131, 128, 121); /*rgb(29, 25, 25);*/
+  color:rgb(158, 86, 19);
 
-  }
+}
+/*ccentering nav*/
+.licenter {
+  margin-left: 0%;
+}
 
 
-  /* Add an active class to highlight the current page */
-  /*.topnav a.active {
-    background-color: #c9984e;
-    color: white; 
-  }*/
+
+/* Add an active class to highlight the current page */
+/*.topnav a.active {
+  background-color: #c9984e;
+  color: white; 
+}*/
 
 /*.active {
-    background-color: #c9984e;
-    color: white;
-    
-  }*/
-/*ccentering nav*/
-  .licenter {
-      margin-left: 0%;
-  }
+  background-color: #c9984e;
+  color: white;
+  
+}*/
 
 /*Responsiveness across devices*/
-  /*@media screen and (max-width: 600px) {
-    ul.topnav li.right, 
-    ul.topnav li {float: none;}
-  }*/
-  
-  
+/*@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}*/
+
+
 .slds-truncate {
-    font-size:large;
-    /*padding: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    color:#FFFFFF;
-    background-color:#000000;
-    float: left; */
+  font-size:large;
+  /*padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color:#FFFFFF;
+  background-color:#000000;
+  float: left; */
+  }
+
+  /*.slds-truncate {
+      margin: 0px;
+      display: flex;
     }
 
-    /*.slds-truncate {
-        margin: 0px;
-        display: flex;
-      }
-
 .slds-context-bar {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
 } */
 

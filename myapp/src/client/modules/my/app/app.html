@@ -1,28 +1,61 @@
 <template>
     
-    <div>
-        <my-nav> </my-nav>
-    </div>
     
-   
+    
+    <div>
+        <my-nav onnavchange={handleNavChange}> </my-nav>
+        
+      <br> <br> <br> 
 
-  <my-header> </my-header>
-   
+        <template if:true={home}>
+            <my-home class="center"></my-home>
+        </template>
+
+        <template if:true={ourcompany}> <!--must match js variable case --> 
+            <my-our-company></my-our-company>
+            </template>
+        
+        <template if:true={opportunities}>
+        <my-opportunities></my-opportunities>
+        </template>
+
+        <template if:true={services}>
+            <my-services></my-services>
+            </template>
+
+        <template if:true={contact}>
+        <my-contact></my-contact>
+        </template>
+</div>
+
     <br>  <br> <br> <br> 
 
-    <!-- LWC sample component <my-greeting> -->
-    <div class="center greeting">
-        <!-- <my-greeting speed="slow"></my-greeting> -->
-        <my-greeting speed="medium"></my-greeting>
-        <!-- <my-greeting speed="fast"></my-greeting> -->
-    </div>
    
-    <!-- dispaly home page -->
-    <div>
-        <my-home class="center"></my-home>
-    </div>
+   
 
-   
+    <br> <br><br>
+    
+
+    <footer class="center2" > 
+        <div class="fa">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com/" class="fa fa-twitter"></a> 
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a> 
+        </div>
+     <br><br>
+      
+        &copy;Copyright 2021 HopeConnections
+
+    </footer>
+
+
+    <!--<ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="opportunities.html">Our Company</a></li>
+        <li><a href="ourcompany.html">Services</a></li>
+        <li><a href="about.html">Opportunities</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>-->
 
   <!--  <div class="center">
         <img src="./resources/lwc.png" />
@@ -42,36 +75,5 @@
         </div> 
     </div>-->
 
-    <br> <br> <br>
-    
-    <div>
-        <footer class="center2" > 
-            <div class="fa">
-                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-                <a href="https://www.twitter.com/" class="fa fa-twitter"></a> 
-                <a href="https://www.instagram.com/" class="fa fa-instagram"></a> 
-            </div>
-            <br><br>
    
-        
-        <div class="footnav">
-
-        <!--<ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="opportunities.html">Our Company</a></li>
-            <li><a href="ourcompany.html">Services</a></li>
-            <li><a href="about.html">Opportunities</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>-->
-
-          
-    <br> 
-            &copy;Copyright 2021 HopeConnections
-    </div>
-
-         </footer>
-
-    </div>
-    
-
 </template>
