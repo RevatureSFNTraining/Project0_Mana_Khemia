@@ -6,104 +6,100 @@ export default class App extends LightningElement {
   modelX = false;
   modelY = false;
   account = false;
+  buttonClicked = "";
 
-  handleModelSClick(e) {
-    if (this.model3 != false) {
-      this.model3 = false;
+  handleButtonClick(e) {
+    this.buttonClicked = e.detail;
+    switch (this.buttonClicked) {
+      // Model 3 page
+      case "model3":
+        if (this.modelS != false) {
+          this.modelS = false;
+        }
+        if (this.modelX != false) {
+          this.modelX = false;
+        }
+        if (this.modelY != false) {
+          this.modelY = false;
+        }
+        if (this.account != false) {
+          this.account = false;
+        }
+        if (this.model3 != true) {
+          this.model3 = true;
+        }
+        break;
+      // Model X page
+      case "modelX":
+        if (this.modelS != false) {
+          this.modelS = false;
+        }
+        if (this.model3 != false) {
+          this.model3 = false;
+        }
+        if (this.modelY != false) {
+          this.modelY = false;
+        }
+        if (this.account != false) {
+          this.account = false;
+        }
+        if (this.modelX != true) {
+          this.modelX = true;
+        }
+        break;
+      // Model Y page
+      case "modelY":
+        if (this.modelS != false) {
+          this.modelS = false;
+        }
+        if (this.model3 != false) {
+          this.model3 = false;
+        }
+        if (this.modelX != false) {
+          this.modelX = false;
+        }
+        if (this.account != false) {
+          this.account = false;
+        }
+        if (this.modelY != true) {
+          this.modelY = true;
+        }
+        break;
+      // Account
+      case "account":
+        if (this.modelS != false) {
+          this.modelS = false;
+        }
+        if (this.model3 != false) {
+          this.model3 = false;
+        }
+        if (this.modelX != false) {
+          this.modelX = false;
+        }
+        if (this.modelY != false) {
+          this.modelY = false;
+        }
+        if (this.account != true) {
+          this.account = true;
+        }
+        break;
+      // Homepage/Model S page
+      default:
+        if (this.model3 != false) {
+          this.model3 = false;
+        }
+        if (this.modelX != false) {
+          this.modelX = false;
+        }
+        if (this.modelY != false) {
+          this.modelY = false;
+        }
+        if (this.account != false) {
+          this.account = false;
+        }
+        if (this.modelS != true) {
+          this.modelS = true;
+        }
     }
-    if (this.modelX != false) {
-      this.modelX = false;
-    }
-    if (this.modelY != false) {
-      this.modelY = false;
-    }
-    if (this.account != false) {
-      this.account = false;
-    }
-    if (this.modelS != true) {
-      this.modelS = true;
-    }
-  }
-
-  handleModel3Click(e) {
-    if (this.modelS != false) {
-      this.modelS = false;
-    }
-    if (this.modelX != false) {
-      this.modelX = false;
-    }
-    if (this.modelY != false) {
-      this.modelY = false;
-    }
-    if (this.account != false) {
-      this.account = false;
-    }
-    if (this.model3 != true) {
-      this.model3 = true;
-    }
-  }
-
-  handleModelXClick(e) {
-    if (this.modelS != false) {
-      this.modelS = false;
-    }
-    if (this.model3 != false) {
-      this.model3 = false;
-    }
-    if (this.modelY != false) {
-      this.modelY = false;
-    }
-    if (this.account != false) {
-      this.account = false;
-    }
-    if (this.modelX != true) {
-      this.modelX = true;
-    }
-  }
-
-  handleModelYClick(e) {
-    if (this.modelS != false) {
-      this.modelS = false;
-    }
-    if (this.model3 != false) {
-      this.model3 = false;
-    }
-    if (this.modelX != false) {
-      this.modelX = false;
-    }
-    if (this.account != false) {
-      this.account = false;
-    }
-    if (this.modelY != true) {
-      this.modelY = true;
-    }
-  }
-
-  handleAccountClick(e) {
-    if (this.modelS != false) {
-      this.modelS = false;
-    }
-    if (this.model3 != false) {
-      this.model3 = false;
-    }
-    if (this.modelX != false) {
-      this.modelX = false;
-    }
-    if (this.modelY != false) {
-      this.modelY = false;
-    }
-    if (this.account != true) {
-      this.account = true;
-    }
-    /* Used for testing buttons
-    alert(
-      `Model S: ${this.modelS}
-      \nModel 3: ${this.model3}
-      \nModel X: ${this.modelX}
-      \nModel Y: ${this.modelY}
-      \nAccount: ${this.account}
-      `
-    );
-    */
   }
 }

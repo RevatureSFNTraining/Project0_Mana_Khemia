@@ -1,26 +1,43 @@
 <template>
-  <div class="page">
-    <div class="navigation_bar">
-      <div class="left">
-        <img src='./resources/images/tesla_logo.png' alt='Tesla' class='logo' />
+  <!--Homepage/Model S Page-->
+  <template if:true={modelS}>
+    <div class="modelSPage">
+      <!--Navigation Bar-->
+      <div class="navigation_bar">
+        <div class="left">
+          <img src='./resources/images/tesla_logo.png' alt='Tesla' class='logo' />
+        </div>
+        <div class="middle">
+          <my-model-s-button onbuttonclick={handleButtonClick}></my-model-s-button>
+          <my-model-3-button onbuttonclick={handleButtonClick}></my-model-3-button>
+          <my-model-x-button onbuttonclick={handleButtonClick}></my-model-x-button>
+          <my-model-y-button onbuttonclick={handleButtonClick}></my-model-y-button>
+        </div>
+        <div class="right">
+          <my-account-button onbuttonclick={handleButtonClick}></my-account-button>
+        </div>
       </div>
-      <div class="middle">
-        <my-model-s-button onbuttonclick={handleModelSClick}></my-model-s-button>
-        <my-model-3-button onbuttonclick={handleModel3Click}></my-model-3-button>
-        <my-model-x-button onbuttonclick={handleModelXClick}></my-model-x-button>
-        <my-model-y-button onbuttonclick={handleModelYClick}></my-model-y-button>
-      </div>
-      <div class="right">
-        <my-account-button onbuttonclick={handleAccountClick}></my-account-button>
+      <!--Website Content-->
+      <div class="content">
+        <div class="product_title">
+          <my-product-title></my-product-title>
+        </div>
+        <div class="product_details">
+          <my-product-details></my-product-details>
+        </div>
       </div>
     </div>
-    <div class="content">
-      <div class="product_title">
-        <my-product-title></my-product-title>
-      </div>
-      <div class="product_details">
-        <my-product-details></my-product-details>
-      </div>
-    </div>
-  </div>
+  </template>
+
+  <!--Model 3 Page-->
+  <template if:true={model3}></template>
+
+  <!--Model X Page-->
+  <template if:true={modelX}></template>
+
+  <!--Model Y Page-->
+  <template if:true={modelY}></template>
+
+  <!--Account Page-->
+  <template if:true={account}></template>
 </template>
