@@ -1,6 +1,7 @@
 import { LightningElement } from 'lwc';
 
 export default class UserInfo extends LightningElement {
+    // This will pull from an external file later
     userInfo = {
         "name" : "ZHamid",
         "avatar": "../../../resources/avatar.png",
@@ -32,8 +33,8 @@ export default class UserInfo extends LightningElement {
 
     connectedCallback() {
         window.jquery = require('../../../../jquery');
-        localStorage.setItem('userInfo', JSON.stringify(this.userInfo));
-        //this.userInfo = JSON.parse(localStorage.getItem('userInfo'));
+        //localStorage.setItem('userInfo', JSON.stringify(this.userInfo));
+        this.userInfo = JSON.parse(localStorage.getItem('userInfo'));
         if(this.userInfo.socialMedia.steamCommunityId !== "null") {
             this.steamCommunityLink = `https://steamcommunity.com/id/${this.userInfo.socialMedia.steamCommunityId}`;
         }
@@ -47,12 +48,12 @@ export default class UserInfo extends LightningElement {
             this.youtubeChannelLink = `https://youtube.com/channel/${this.userInfo.socialMedia.youtubeChannelId}`;
         }
         this.initializeGames();
-        console.log(this.nowPlaying1);
     }
 
 
     initializeGames() {
         // Optimally this would be handled in another file, but this will work for now
+        // Boxart, developer, publisher, release date, and genre could all optionally pull from the MobyGames API
         this.nowPlaying1 = this.newGame('Vampire the Masquerade - Bloodlines', 'PC');
             this.updateCompletionStatus(this.nowPlaying1, 'completed');
             this.updateCompletionStatus(this.nowPlaying1, 'mastered');
@@ -64,6 +65,7 @@ export default class UserInfo extends LightningElement {
             this.nowPlaying1.publisher = 'Activision';
             this.nowPlaying1.releaseDate = 'Nov 16, 2004';
             this.nowPlaying1.genre = 'Action-RPG';
+            //this.nowPlaying1.name = '日本語テスト';
         //nowPlaying1 = null;
         this.nowPlaying2 = this.newGame('Hybrid Heaven', 'N64');
             this.updateCompletionStatus(this.nowPlaying2, 'beaten');
@@ -72,25 +74,16 @@ export default class UserInfo extends LightningElement {
     }
 
     updateCompletionStatus(gameInfo, completionStatus) {
-        switch(completionStatus) {
-            case 'unplayed':
-                gameInfo.completionStatus = '../../../resources/completionstatus/unplayed.png';
-                break;
-            case 'unfinished':
-                gameInfo.completionStatus = '../../../resources/completionstatus/unfinished.png';
-                break;
-            case 'beaten':
-                gameInfo.completionStatus = '../../../resources/completionstatus/beaten.png';
-                break;
-            case 'completed':
-                gameInfo.completionStatus = '../../../resources/completionstatus/completed.png';
-                break;
-            case 'null':
-                gameInfo.completionStatus = '../../../resources/completionstatus/null.png';
-                break;
-            case 'mastered':
-                gameInfo.isMastered = true;
-                break;
+        /* Mastery is an optional flag to denote special completions (score-attacks, speedruns, etc.)
+           Unlike the original Backloggery, we don't want it to override normal completion status
+           (completing a speedrun doesn't mean you 100%d the game, so it could be 'beaten' and still 'mastered';
+           in the current Backloggery, all mastered games are denoted 'completed'.)
+           so it has an optional flag here, and we use HTML to override the displayed completion status
+           if it is mastered. */
+        if(completionStatus == 'mastered') {
+            gameInfo.isMastered = true;
+        } else {
+            gameInfo.completionStatus = `../../../resources/completionstatus/${completionStatus}.png`;
         }
     }
 

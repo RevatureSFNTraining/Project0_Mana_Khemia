@@ -4,7 +4,22 @@
     top: 10%;
 }
 
-img:hover + .slds-popover.slds-popover_tooltip.slds-hide {
+img:hover + .user-info-tooltip {
     background-color: #444444;
     display : block!important;
+}
+
+.now-playing-header {
+    color: #444444;
+    font-size: 20px;
+}
+
+.user-name {
+    color: #333333;
+    font-size: 30px;
+}
+
+.user-pronouns {
+    font-size: 12px;
+    color: #777777;
 }

@@ -1,0 +1,206 @@
+<template>
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped slds-size_1-of-2 slds-float_right slds-m-top_xx-large" aria-label="Example table of Opportunities with striped rows">
+        <thead>
+          <tr class="slds-line-height_reset">
+            <th>
+            </th>
+            <th data-label="Opportunity Name" scope="row">
+                <div class="slds-truncate" title="Cloudhub">
+                  Total Stats:
+                </div>
+            </th>
+            <th></th><th></th><th></th>
+          </tr>
+          <tr class="slds-line-height_reset">
+            <th>
+                <div class="slds-progress-bar slds-progress-bar_large" aria-valuemin="0" aria-valuemax="100" aria-valuenow={totalStats.unAllPercentage} aria-label="" role="progressbar">
+                    <span class="slds-progress-bar__value unall-progress-bar">
+                      <span class="slds-assistive-text">Unplayed+Unfinished: {totalStats.unAllPercentage}%</span>
+                    </span>
+                </div>
+            </th>
+            <th data-label="Opportunity Name" scope="row">
+                <div class="slds-truncate" title="Cloudhub">
+                    <img src="../../../resources/completionstatus/unfinished.png" width="20" height="20">
+                &ensp;{totalStats.unfinishedCount}&nbsp;/&nbsp;
+                <img src="../../../resources/completionstatus/unplayed.png" width="20" height="20">
+                &ensp;{totalStats.unplayedCount}
+                </div>
+              </th>
+            <th></th><th></th><th></th>
+          </tr>
+          <tr class="slds-line-height_reset">
+            <th>
+                <div class="slds-progress-bar slds-progress-bar_large" aria-valuemin="0" aria-valuemax="100" aria-valuenow={totalStats.finishedPercentage} aria-label="" role="progressbar">
+                    <span class="slds-progress-bar__value finished-progress-bar">
+                      <span class="slds-assistive-text">Beaten+Completed: {totalStats.finishedPercentage}%</span>
+                    </span>
+                </div>
+            </th>
+            <th data-label="Opportunity Name" scope="row">
+                <div class="slds-truncate" title="Cloudhub">
+                    <img src="../../../resources/completionstatus/beaten.png" width="20" height="20">
+                &ensp;{totalStats.beatenCount}&nbsp;/&nbsp;
+                <img src="../../../resources/completionstatus/completed.png" width="20" height="20">
+                &ensp;{totalStats.completedCount}
+                </div>
+              </th>
+            <th></th><th></th><th></th>
+          </tr>
+          <tr class="slds-line-height_reset">
+            <th>
+                <div class="slds-progress-bar slds-progress-bar_large" aria-valuemin="0" aria-valuemax="100" aria-valuenow={totalStats.nullPercentage} aria-label="" role="progressbar">
+                    <span class="slds-progress-bar__value null-progress-bar">
+                      <span class="slds-assistive-text">Null: {totalStats.nullPercentage}%</span>
+                    </span>
+                </div>
+            </th>
+            <th data-label="Opportunity Name" scope="row">
+                <div class="slds-truncate" title="Cloudhub">
+                    &emsp;<img src="../../../resources/completionstatus/null.png" width="20" height="20">
+                        &ensp;{totalStats.nullCount}
+                </div>
+              </th>
+            <th></th><th></th><th></th>
+          </tr>
+        </thead>
+
+
+
+
+
+
+
+
+        <tbody>
+          <tr class="slds-hint-parent" if:true={pc.totalGameCount}>
+            <th data-label="Opportunity Name" scope="row">
+              <div class="slds-truncate" title="Cloudhub">
+                <a class="sysbox" href="#" tabindex="-1">{systems.pc.name}</a>
+              </div>
+            </th>
+            <td data-label="Account Name">
+              <div class="slds-truncate" title="Cloudhub">
+                <img src="../../../resources/completionstatus/unfinished.png" width="20" height="20">
+                &ensp;{systems.pc.unfinishedCount}&nbsp;/&nbsp;
+                <img src="../../../resources/completionstatus/unplayed.png" width="20" height="20">
+                &ensp;{systems.pc.unplayedCount}
+                </div>
+            </td>
+            <td data-label="Close Date">
+              <div class="slds-truncate" title="4/14/2015">
+                <img src="../../../resources/completionstatus/beaten.png" width="20" height="20">
+                &ensp;{systems.pc.beatenCount}
+              </div>
+            </td>
+            <td data-label="Prospecting">
+              <div class="slds-truncate" title="Prospecting">
+                <img src="../../../resources/completionstatus/completed.png" width="20" height="20">
+                &ensp;{systems.pc.completedCount}
+              </div>
+            </td>
+            <td data-label="Contact">
+                <div class="slds-truncate slds-float_right" title="jrogers@cloudhub.com">
+                      Total: {systems.pc.totalGameCount}
+                </div>
+            </td>
+          </tr>
+          <tr class="slds-hint-parent" if:true={nintendo64.totalGameCount}>
+            <th data-label="Opportunity Name" scope="row">
+              <div class="slds-truncate" title="Cloudhub + Anypoint Connectors">
+                <a class="sysbox" href="#" tabindex="-1">{systems.nintendo64.name}</a>
+              </div>
+            </th>
+            <td data-label="Account Name">
+                <div class="slds-truncate" title="Cloudhub">
+                  <img src="../../../resources/completionstatus/unfinished.png" width="20" height="20">
+                  &ensp;{systems.nintendo64.unfinishedCount}&nbsp;/&nbsp;
+                  <img src="../../../resources/completionstatus/unplayed.png" width="20" height="20">
+                  &ensp;{systems.nintendo64.unplayedCount}
+                  </div>
+              </td>
+              <td data-label="Close Date">
+                <div class="slds-truncate" title="4/14/2015">
+                  <img src="../../../resources/completionstatus/beaten.png" width="20" height="20">
+                  &ensp;{systems.nintendo64.beatenCount}
+                </div>
+              </td>
+              <td data-label="Prospecting">
+                <div class="slds-truncate" title="Prospecting">
+                  <img src="../../../resources/completionstatus/completed.png" width="20" height="20">
+                  &ensp;{systems.nintendo64.completedCount}
+                </div>
+              </td>
+              <td data-label="Contact">
+                <div class="slds-truncate slds-float_right" title="jrogers@cloudhub.com">
+                      Total: {systems.nintendo64.totalGameCount}
+                </div>
+            </td>
+          </tr>
+          <tr class="slds-hint-parent" if:true={segamastersystem.totalGameCount}>
+            <th data-label="Opportunity Name" scope="row">
+              <div class="slds-truncate" title="Cloudhub">
+                <a class="sysbox" href="#" tabindex="-1">{systems.segamastersystem.name}</a>
+              </div>
+            </th>
+            <td data-label="Account Name">
+                <div class="slds-truncate" title="Cloudhub">
+                  <img src="../../../resources/completionstatus/unfinished.png" width="20" height="20">
+                  &ensp;{systems.segamastersystem.unfinishedCount}&nbsp;/&nbsp;
+                  <img src="../../../resources/completionstatus/unplayed.png" width="20" height="20">
+                  &ensp;{systems.segamastersystem.unplayedCount}
+                  </div>
+              </td>
+              <td data-label="Close Date">
+                <div class="slds-truncate" title="4/14/2015">
+                  <img src="../../../resources/completionstatus/beaten.png" width="20" height="20">
+                  &ensp;{systems.segamastersystem.beatenCount}
+                </div>
+              </td>
+              <td data-label="Prospecting">
+                <div class="slds-truncate" title="Prospecting">
+                  <img src="../../../resources/completionstatus/completed.png" width="20" height="20">
+                  &ensp;{systems.segamastersystem.completedCount}
+                </div>
+              </td>
+              <td data-label="Contact">
+                <div class="slds-truncate slds-float_right" title="jrogers@cloudhub.com">
+                      Total: {systems.segamastersystem.totalGameCount}
+                </div>
+            </td>
+          </tr>
+          <tr class="slds-hint-parent" if:true={atari2600.totalGameCount}>
+            <th data-label="Opportunity Name" scope="row">
+              <div class="slds-truncate" title="Cloudhub">
+                <a class="sysbox" href="#" tabindex="-1">{systems.atari2600.name}</a>
+              </div>
+            </th>
+            <td data-label="Account Name">
+                <div class="slds-truncate" title="Cloudhub">
+                  <img src="../../../resources/completionstatus/unfinished.png" width="20" height="20">
+                  &ensp;{systems.atari2600.unfinishedCount}&nbsp;/&nbsp;
+                  <img src="../../../resources/completionstatus/unplayed.png" width="20" height="20">
+                  &ensp;{systems.atari2600.unplayedCount}
+                  </div>
+              </td>
+              <td data-label="Close Date">
+                <div class="slds-truncate" title="4/14/2015">
+                  <img src="../../../resources/completionstatus/beaten.png" width="20" height="20">
+                  &ensp;{systems.atari2600.beatenCount}
+                </div>
+              </td>
+              <td data-label="Prospecting">
+                <div class="slds-truncate" title="Prospecting">
+                  <img src="../../../resources/completionstatus/completed.png" width="20" height="20">
+                  &ensp;{systems.atari2600.completedCount}
+                </div>
+              </td>
+              <td data-label="Contact">
+                <div class="slds-truncate slds-float_right" title="jrogers@cloudhub.com">
+                      Total: {systems.atari2600.totalGameCount}
+                </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</template>
