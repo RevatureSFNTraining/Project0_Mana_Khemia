@@ -54,7 +54,7 @@ export default class UserInfo extends LightningElement {
     initializeGames() {
         // Optimally this would be handled in another file, but this will work for now
         // Boxart, developer, publisher, release date, and genre could all optionally pull from the MobyGames API
-        this.nowPlaying1 = this.newGame('Vampire the Masquerade - Bloodlines', 'PC');
+        this.nowPlaying1 = this.newGame('Vampire the Masquerade - Bloodlines', 'Steam');
             this.updateCompletionStatus(this.nowPlaying1, 'completed');
             this.updateCompletionStatus(this.nowPlaying1, 'mastered');
             this.nowPlaying1.boxart = 'https://www.mobygames.com/images/covers/l/67710-vampire-the-masquerade-bloodlines-windows-other.jpg';
