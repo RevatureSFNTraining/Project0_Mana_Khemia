@@ -8,12 +8,6 @@ export default class App extends LightningElement {
   modelY = false;
   account = false;
 
-  // Product details
-  modelSDetail = "";
-  model3Detail = "";
-  modelXDetail = "";
-  modelYDetail = "";
-
   // Tracks which button was clicked
   buttonClicked = "";
 

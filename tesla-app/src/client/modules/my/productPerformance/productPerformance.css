@@ -1,0 +1,16 @@
+.performance {
+  text-align: center;
+  padding: 40px;
+}
+
+p.title {
+  color: white;
+  font-size: xx-large;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+p.subtitle {
+  color: white;
+  margin: 0 auto;
+}

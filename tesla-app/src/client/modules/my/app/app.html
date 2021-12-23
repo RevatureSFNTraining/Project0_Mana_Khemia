@@ -4,26 +4,39 @@
     <div class="modelSPage">
       <!--Navigation Bar-->
       <div class="navigation_bar">
+        <!--Tesla Logo-->
         <div class="left">
           <img src='./resources/images/tesla_logo.png' alt='Tesla' class='logo' />
         </div>
+        <!--Product Navigation Buttons-->
         <div class="middle">
           <my-navigation-button onbuttonclick={handleButtonClick} name="Model S"></my-navigation-button>
           <my-navigation-button onbuttonclick={handleButtonClick} name="Model 3"></my-navigation-button>
           <my-navigation-button onbuttonclick={handleButtonClick} name="Model X"></my-navigation-button>
           <my-navigation-button onbuttonclick={handleButtonClick} name="Model Y"></my-navigation-button>
         </div>
+        <!--Account Button-->
         <div class="right">
           <my-navigation-button onbuttonclick={handleButtonClick} name="Account"></my-navigation-button>
         </div>
       </div>
       <!--Website Content-->
       <div class="content">
-        <div class="product_title">
+        <!--Product Name-->
+        <div class="product_name">
           <my-product-title producttitle="Model S" productsubtitle="Plaid"></my-product-title>
         </div>
+        <!--Product Details-->
         <div class="product_details">
-          <my-product-details></my-product-details>
+          <!--Product Performance-->
+          <div class="product_performance">
+            <my-product-performance title="396mi" subtitle="Range (EPA est.)"></my-product-performance>
+            <my-product-performance title="1.99s" subtitle="0-60 mph*"></my-product-performance>
+            <my-product-performance title="200mph" subtitle="Top Speed*"></my-product-performance>
+            <my-product-performance title="1,020hp" subtitle="Peak Power"></my-product-performance>
+            <!--Order Now Button-->
+            <my-order-now-button onbuttonclick={handleButtonClick}></my-order-now-button>
+          </div>
         </div>
       </div>
     </div>

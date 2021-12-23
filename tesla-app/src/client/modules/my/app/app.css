@@ -59,17 +59,25 @@
   align-items: center;
 }
 
-.product_title {
+.product_name {
   width: 100%;
   text-align: center;
   padding-top: 40px;
 }
 
 .product_details {
-  height: 100%;
-  width: 100%;
+  display: flex;
+  width: 60%;
+  height: 80%;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.product_performance {
+  flex: 5;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
 }
