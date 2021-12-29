@@ -1,7 +1,49 @@
 .modelSPage {
   display: flex;
   flex-direction: column;
-  background-image: url(./resources/images/model_s.png);
+  background-image: url(./resources/images/modelS.png);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.model3Page {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./resources/images/model3.png);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modelXPage {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./resources/images/modelX.png);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modelYPage {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./resources/images/modelY.png);
   position: fixed;
   top: 0;
   left: 0;

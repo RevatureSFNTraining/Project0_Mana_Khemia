@@ -43,13 +43,131 @@
   </template>
 
   <!--Model 3 Page-->
-  <template if:true={model3}></template>
+  <template if:true={model3}>
+    <div class="model3Page">
+      <!--Navigation Bar-->
+      <div class="navigation_bar">
+        <!--Tesla Logo-->
+        <div class="left">
+          <img src='./resources/images/tesla_logo.png' alt='Tesla' class='logo' />
+        </div>
+        <!--Product Navigation Buttons-->
+        <div class="middle">
+          <my-navigation-button onbuttonclick={handleButtonClick} name="Model S"></my-navigation-button>
+          <my-navigation-button onbuttonclick={handleButtonClick} name="Model 3"></my-navigation-button>
+          <my-navigation-button onbuttonclick={handleButtonClick} name="Model X"></my-navigation-button>
+          <my-navigation-button onbuttonclick={handleButtonClick} name="Model Y"></my-navigation-button>
+        </div>
+        <!--Account Button-->
+        <div class="right">
+          <my-navigation-button onbuttonclick={handleButtonClick} name="Account"></my-navigation-button>
+        </div>
+      </div>
+      <!--Website Content-->
+      <div class="content">
+        <!--Product Name-->
+        <div class="product_name">
+          <my-product-title producttitle="Model 3" productsubtitle=""></my-product-title>
+        </div>
+        <!--Product Details-->
+        <div class="product_details">
+          <!--Product Performance-->
+          <div class="product_performance">
+            <my-product-performance title="3.1s" subtitle="0-60 mph*"></my-product-performance>
+            <my-product-performance title="358mi" subtitle="Range (EPA est.)"></my-product-performance>
+            <my-product-performance title="AWD" subtitle="Dual Motor"></my-product-performance>
+            <!--Order Now Button-->
+            <my-order-now-button onbuttonclick={handleButtonClick}></my-order-now-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
 
   <!--Model X Page-->
-  <template if:true={modelX}></template>
+  <template if:true={modelX}>
+    <div class="modelXPage">
+      <!--Navigation Bar-->
+      <div class="navigation_bar">
+        <!--Tesla Logo-->
+        <div class="left">
+          <img src='./resources/images/tesla_logo.png' alt='Tesla' class='logo' />
+        </div>
+        <!--Product Navigation Buttons-->
+        <div class="middle">
+          <my-navigation-button onbuttonclick={handleButtonClick} name="Model S"></my-navigation-button>
+          <my-navigation-button onbuttonclick={handleButtonClick} name="Model 3"></my-navigation-button>
+          <my-navigation-button onbuttonclick={handleButtonClick} name="Model X"></my-navigation-button>
+          <my-navigation-button onbuttonclick={handleButtonClick} name="Model Y"></my-navigation-button>
+        </div>
+        <!--Account Button-->
+        <div class="right">
+          <my-navigation-button onbuttonclick={handleButtonClick} name="Account"></my-navigation-button>
+        </div>
+      </div>
+      <!--Website Content-->
+      <div class="content">
+        <!--Product Name-->
+        <div class="product_name">
+          <my-product-title producttitle="Model X" productsubtitle="Plaid"></my-product-title>
+        </div>
+        <!--Product Details-->
+        <div class="product_details">
+          <!--Product Performance-->
+          <div class="product_performance">
+            <my-product-performance title="333mi" subtitle="Range (EPA est.)"></my-product-performance>
+            <my-product-performance title="2.5s" subtitle="0-60 mph*"></my-product-performance>
+            <my-product-performance title="9.9s" subtitle="1/4 Mile"></my-product-performance>
+            <my-product-performance title="1,020hp" subtitle="Peak Power"></my-product-performance>
+            <!--Order Now Button-->
+            <my-order-now-button onbuttonclick={handleButtonClick}></my-order-now-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
 
   <!--Model Y Page-->
-  <template if:true={modelY}></template>
+  <template if:true={modelY}>
+    <div class="modelYPage">
+      <!--Navigation Bar-->
+      <div class="navigation_bar">
+        <!--Tesla Logo-->
+        <div class="left">
+          <img src='./resources/images/tesla_logo.png' alt='Tesla' class='logo' />
+        </div>
+        <!--Product Navigation Buttons-->
+        <div class="middle">
+          <my-navigation-button onbuttonclick={handleButtonClick} name="Model S"></my-navigation-button>
+          <my-navigation-button onbuttonclick={handleButtonClick} name="Model 3"></my-navigation-button>
+          <my-navigation-button onbuttonclick={handleButtonClick} name="Model X"></my-navigation-button>
+          <my-navigation-button onbuttonclick={handleButtonClick} name="Model Y"></my-navigation-button>
+        </div>
+        <!--Account Button-->
+        <div class="right">
+          <my-navigation-button onbuttonclick={handleButtonClick} name="Account"></my-navigation-button>
+        </div>
+      </div>
+      <!--Website Content-->
+      <div class="content">
+        <!--Product Name-->
+        <div class="product_name">
+          <my-product-title producttitle="Model Y" productsubtitle=""></my-product-title>
+        </div>
+        <!--Product Details-->
+        <div class="product_details">
+          <!--Product Performance-->
+          <div class="product_performance">
+            <my-product-performance title="76cu ft" subtitle="Cargo Space"></my-product-performance>
+            <my-product-performance title="330mi" subtitle="Range (EPA est.)"></my-product-performance>
+            <my-product-performance title="AWD" subtitle="Dual Motor"></my-product-performance>
+            <!--Order Now Button-->
+            <my-order-now-button onbuttonclick={handleButtonClick}></my-order-now-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
 
   <!--Account Page-->
   <template if:true={account}></template>
